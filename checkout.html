@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="section-split">
+          <a href="index.html" id="back">Back to Home</a>
+        <div class="cartcountinner">cart(<div id="procount">0</div>)</div>
+    </div>
+    <div class="inner-wrapper">
+        <div class="full-form">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+            <div>
+                <label>Full Name</label>
+                <input type="text" id="name">
+                <span id="nameError" class="error"></span>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" id="email">
+                <span id="emailError" class="error" ></span>
+            </div>
+            <div>
+                <label>Phone</label>
+                <input type="text" id="phone">
+                <span id="phoneError" class="error" ></span>
+            </div>
+            <div>
+                <label>Address</label>
+                <textarea id="address"></textarea>
+                <span id="addressError" class="error" ></span>
+            </div>
+            <div>
+                <label>City</label>
+                <input type="text" id="city">
+                <span id="cityError" class="error"></span>
+            </div>
+            <div>
+                <label>PIN Code</label>
+                <input type="text" id="pincode">
+                <span id="pincodeError" class="error" ></span>
+            </div>
+            <button type="submit" class="button order">Place Order</button>
+        </form>
+        <div class="result" id="result"></div>
+        </div>
+        <div class="int-order">
+            <h2>Cart details</h2>
+            <div id="cartdetails">
+            </div>
+        </div>
+      
+    </div>
+       
+    </div>
+ <script type="module" src="/src/checkout.js"></script>
+</body>
+</html>

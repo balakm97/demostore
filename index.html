@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopLite</title>
+    <style>
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        color: #333;
+      }
+      
+    </style>
+  </head>
+  <body>
+        <div id="loader">
+          <div class="spinner">Loading...</div>
+        </div>
+        <div class="cartcount">
+      <div class="cartcountinner-home">cart(<div id="procount">0</div>)</div>
+      <div id="popupContainer">
+        
+      </div>
+    </div>
+    <input id="findproduct" placeholder="Search Product">
+    <div class="filter"> 
+      <div id="sortControls">
+        <button id="sortAsc">Low to High</button>
+        <button id="sortDesc">High to Low</button>
+      </div>
+      <div id="category"></div>
+    </div>
+    <div id="innerProducts"></div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
