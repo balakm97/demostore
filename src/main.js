@@ -43,7 +43,6 @@ import './style.css'
                 btn.classList.remove('active');
                 });
                 event.target.classList.add("active");
-                // GUARD CLAUSE: If they clicked the container gap, do nothing!
                 if (!selectedCat) return; 
                 let matched = allProducts.filter(product => {
                     return product.category === selectedCat;
@@ -71,7 +70,6 @@ import './style.css'
     function showProducts(products) {
         let inProducts = document.getElementById("innerProducts");
         inProducts.innerHTML = "";
-
         products.forEach(product => {
             inProducts.innerHTML += `
                 <div class="innerproduct">
@@ -158,17 +156,13 @@ import './style.css'
             popups.classList.add("hide");
         });
     });
-
 function syncCartBadge() {
     let currentCart = JSON.parse(localStorage.getItem("cart")) || [];
     let totalItems = currentCart.reduce((sum, item) => sum + (item.quantity || 1), 0);
-    
     let pcount = document.getElementById('procount');
     if (pcount) {
         pcount.innerHTML = totalItems;
     }
 }
 syncCartBadge();
-
-// Sync badge when navigating back/forward with browser arrows
 window.addEventListener("pageshow", syncCartBadge);
