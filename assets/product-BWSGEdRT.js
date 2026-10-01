@@ -9,7 +9,7 @@ import"./style-BmZvC_QO.js";var e=JSON.parse(localStorage.getItem(`cart`))||[],t
                     <p>${t.description}</p>
                     <div class="button-group">
                     <button id="addtocart">Add to cart</button>
-                    <a class="cart-button" href="/cart.html">View Cart</a>
+                    <a class="cart-button" href="cart.html">View Cart</a>
                     </div>
                 </div>
-            `,document.getElementById(`addtocart`).addEventListener(`click`,()=>{e.push(t),localStorage.setItem(`cart`,JSON.stringify(e)),document.getElementById(`addtocart`).textContent=`Product added`,setTimeout(()=>{document.getElementById(`addtocart`).textContent=`Add product`},1e3)});let r=document.getElementById(`procount`);r.innerHTML=e.length}).catch(e=>{console.log(e),document.getElementById(`detail`).innerHTML=`<p>Product not found.</p>`});
+            `,document.getElementById(`addtocart`).addEventListener(`click`,()=>{e.push(t),localStorage.setItem(`cart`,JSON.stringify(e)),document.getElementById(`addtocart`).textContent=`Product added`,setTimeout(()=>{document.getElementById(`addtocart`).textContent=`Add to product`},1e3)});let r=document.getElementById(`procount`);r.innerHTML=e.length}).catch(e=>{console.log(e),document.getElementById(`detail`).innerHTML=`<p>Product not found.</p>`});

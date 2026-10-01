@@ -24,10 +24,10 @@ import"./style-BmZvC_QO.js";var e=JSON.parse(localStorage.getItem(`cart`))||[],t
                     </div>
                     <div id="closebtn">Close</div>
                     <div class="button-group">
-                    <a class="cart-button" href="/cart.html">
+                    <a class="cart-button" href="cart.html">
                         View Cart
                     </a>
-                    <a href="/checkout.html" class="cart-button" id="checkoutBtn">
+                    <a href="checkout.html" class="cart-button" id="checkoutBtn">
                         Checkout
                     </a>
                 </div>
