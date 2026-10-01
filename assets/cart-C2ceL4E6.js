@@ -1,4 +1,4 @@
-import"./style-BmZvC_QO.js";var e=JSON.parse(localStorage.getItem(`cart`))||[],t=document.getElementById(`cartProducts`),n=document.getElementById(`cartTotal`),r=document.getElementById(`checkoutBtn`),i=document.getElementById(`procount`);function a(){if(t.innerHTML=``,s(),e.length===0){t.innerHTML=`<p>Your cart is empty.</p>`,n.innerHTML=`Total: $0.00`,r&&(r.style.display=`none`);return}r&&(r.style.display=`block`),e.forEach((e,n)=>{let r=e.quantity||1;t.innerHTML+=`
+import"./style-BC-ahMUx.js";var e=JSON.parse(localStorage.getItem(`cart`))||[],t=document.getElementById(`cartProducts`),n=document.getElementById(`cartTotal`),r=document.getElementById(`checkoutBtn`),i=document.getElementById(`procount`);function a(){if(t.innerHTML=``,s(),e.length===0){t.innerHTML=`<p>Your cart is empty.</p>`,n.innerHTML=`Total: $0.00`,r&&(r.style.display=`none`);return}r&&(r.style.display=`block`),e.forEach((e,n)=>{let r=e.quantity||1;t.innerHTML+=`
             <div class="cart-product">
                 <img src="${e.images[0]}">
                 <div class="cart-content">

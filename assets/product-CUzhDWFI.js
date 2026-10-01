@@ -1,4 +1,4 @@
-import"./style-BmZvC_QO.js";var e=JSON.parse(localStorage.getItem(`cart`))||[],t=new URLSearchParams(location.search).get(`id`);fetch(`https://dummyjson.com/products/`+t).then(e=>e.json()).then(t=>{let n=document.getElementById(`detail`);n.innerHTML=`
+import"./style-BC-ahMUx.js";var e=JSON.parse(localStorage.getItem(`cart`))||[],t=new URLSearchParams(location.search).get(`id`);fetch(`https://dummyjson.com/products/`+t).then(e=>e.json()).then(t=>{let n=document.getElementById(`detail`);n.innerHTML=`
                 <img src="${t.images[0]}">
                 <div>
                     <h2>${t.title}</h2>
